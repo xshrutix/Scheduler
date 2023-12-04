@@ -6,10 +6,11 @@ import {FaTableCells} from 'react-icons/fa6'
 
 const Guide = () => {
   return (
-    <div className=' w-full py[40rem] px-4 bg-gray-900'>
-      <h1 className=' text-white font-black text-4xl text-center'>Guide Page</h1>
+    <div className=' w-full py[40rem] px-4 bg-white'>
+
+      <h1 className=' text-black font-black text-4xl text-center'>Guide Page</h1>
       <div className=' max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8'>
-        <div className=' w-full shadow-xl flex flex-col p-4 my-56 rounded-lg hover:scale-105 duration-300 bg-white'>
+        <div className=' w-full shadow-2xl shadow-purple-900/80 flex flex-col p-4 my-56 rounded-lg hover:scale-105 duration-300 bg-white'>
            <MdInput
            className=' w-[80px] h-[80px] mx-auto pb-12 ' 
            />
@@ -17,7 +18,7 @@ const Guide = () => {
            <p className=' text-center'>Input your data</p>
         </div>
 
-        <div className=' w-full shadow-xl flex flex-col p-4 my-56 rounded-lg hover:scale-105 duration-300 bg-white'>
+        <div className=' w-full shadow-2xl  shadow-purple-900/80 flex flex-col p-4 my-56 rounded-lg hover:scale-105 duration-300 bg-white'>
            <RiAiGenerate
            className=' w-[80px] h-[80px] mx-auto pb-12 ' 
            />
@@ -25,7 +26,7 @@ const Guide = () => {
            <p className=' text-center'>Generate Table</p>
         </div>
 
-        <div className=' w-full shadow-xl flex flex-col p-4 my-56 rounded-lg hover:scale-105 duration-300 bg-white'>
+        <div className=' w-full shadow-2xl  shadow-purple-900/80 flex flex-col p-4 my-56 rounded-lg hover:scale-105 duration-300 bg-white'>
            <FaTableCells
            className=' w-[80px] h-[80px] mx-auto pb-12 ' 
            />

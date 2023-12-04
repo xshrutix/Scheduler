@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
-
+import logo from '../assets/logo.png';
 const Navigation = () => {
     const [nav, setNav] = useState(true)
     const handelnav = () => {
@@ -9,7 +9,8 @@ const Navigation = () => {
     }
   return (
     <div className=' flex justify-between items-center h-24 max-w-full mx-auth bg-purple-900 text-white ...'>
-        <h1 className=' w-full text-3xl font-bold text-purple-300'>SCHEDULER.</h1>
+        <h1 className=' w-full text-3xl font-bold text-purple-300'>SCHEDULER</h1>
+        <img src={logo} alt='Logo' className='w-28 h-auto' />
         <ul className=' hidden md:flex  pr-80'>
             <li className=' p-4'>Home</li>
             <li className=' p-4'>Guide</li>
