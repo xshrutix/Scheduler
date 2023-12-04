@@ -3,18 +3,18 @@ import { useState } from 'react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 
 const Navigation = () => {
-    const [nav, setNav] = useState(false)
+    const [nav, setNav] = useState(true)
     const handelnav = () => {
         setNav(!nav)
     }
   return (
-    <div className=' flex justify-between items-center h-24 max-w-[1240px] mx-auth bg-purple-900 text-white ...'>
+    <div className=' flex justify-between items-center h-24 max-w-full mx-auth bg-purple-900 text-white ...'>
         <h1 className=' w-full text-3xl font-bold text-purple-300'>SCHEDULER.</h1>
-        <ul className=' hidden md:flex'>
+        <ul className=' hidden md:flex  pr-80'>
             <li className=' p-4'>Home</li>
             <li className=' p-4'>Guide</li>
-            <li className=' p-4'>Table</li>
-            <li className=' p-4'>Table</li>
+            <li className=' p-4'>Generate</li>
+            <li className=' p-4'>Contact</li>
         </ul>
         <div onClick={handelnav} className=' block md:hidden'>
             {!nav ? <AiOutlineClose size={20}/> :  <AiOutlineMenu size={20} />}
@@ -26,8 +26,8 @@ const Navigation = () => {
 
             <li className=' p-4 border-b border-purple-700'>Home</li>
             <li className=' p-4 border-b border-purple-700'>Guide</li>
-            <li className=' p-4 border-b border-purple-700'>Table</li>
-            <li className='p-4'>Table</li>
+            <li className=' p-4 border-b border-purple-700'>Generate</li>
+            <li className='p-4'>Contact</li>
             </ul>
         </div>
 
