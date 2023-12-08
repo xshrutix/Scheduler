@@ -1,15 +1,25 @@
-import React from 'react'
+import React from 'react';
 import Navigation from './components/Navigation'
 import Home from './components/Home'
-import Guide from './components/Guide'
-import Footer from './components/Footer'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import TimeTable from './components/TimeTable'
+import ClassTimeTable from './components/ClassView';
+import Guide from './components/Guide';
+
 const App = () => {
   return (
-    <div>
+    <div  style={{"backgroundColor" : "black"}}>
       <Navigation />
-     <Home />
-     <Guide />
-     <Footer />
+      <BrowserRouter>
+        <Routes>
+          
+          
+          <Route path='/' element= {<Home/>}/>
+          <Route path='/guide' element= {<Guide/>}/>
+          <Route path='/generate' element={<TimeTable />} />
+          <Route path='/generateClass' element={<ClassTimeTable/>} />
+          </Routes>
+        </BrowserRouter>
     </div>
   )
 }
